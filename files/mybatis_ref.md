@@ -1,4 +1,4 @@
-# MyBatis Configuration
+### MyBatis Configuration
 
 ```
 <!DOCTYPE configuration
@@ -6,7 +6,7 @@
 	"http://mybatis.org/dtd/mybatis-3-config.dtd">
 ```
 
-# MyBatis Mapper
+### MyBatis Mapper
 
 ```
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
