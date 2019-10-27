@@ -1,21 +1,8 @@
-drop table board;
-drop sequence seq_board_no;
-
-
 CREATE TABLE board (
-  no	    NUMBER,
-  title 	VARCHAR2(500),
-  content   VARCHAR2(4000),
-  hit       NUMBER,
-  reg_date  DATE,
-  user_no   NUMBER,
-  PRIMARY KEY(no),
-  CONSTRAINT c_board_fk FOREIGN KEY (user_no) 
-  REFERENCES users(no)
+	no int PRIMARY KEY AUTO_INCREMENT,
+    title varchar(128) NOT NULL,
+    content varchar(255) NOT NULL,
+    hit int NOT NULL DEFAULT 0,
+    reg_date datetime NOT NULL DEFAULT now(),
+    user_no int NOT NULL
 );
-
-
-CREATE SEQUENCE seq_board_no
-INCREMENT BY 1 
-START WITH 1 ;
-
