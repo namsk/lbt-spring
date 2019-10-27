@@ -1,4 +1,4 @@
-CREATE TABLE member (
+CREATE TABLE users (
 	no number PRIMARY KEY,
     name varchar(20) NOT NULL,
     email varchar(128) NOT NULL,
@@ -7,4 +7,4 @@ CREATE TABLE member (
     joindate date DEFAULT sysdate
 );
 
-CREATE SEQUENCE seq_member_no;
+CREATE SEQUENCE seq_users_no;
